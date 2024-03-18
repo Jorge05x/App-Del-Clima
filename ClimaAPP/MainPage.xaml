@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClimaAPP.MainPage"
+              BackgroundColor="#0085CA">
+
+    <StackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#0085CA" Offset="0.5"/>
+                <GradientStop Color="#A1D7FE" Offset="5.0"/>
+                <GradientStop Color="#0085CA" Offset="0.5"/>
+                <GradientStop Color="#A1D7FE" Offset="1.0"/>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+        <Frame BackgroundColor="White" 
+        Margin="35,40,35,0"
+        Padding="10,10"
+        CornerRadius="15">
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Buscar"
+                x:Name="cityEntry"
+                HorizontalOptions="FillAndExpand"
+                FontSize="14"
+                TextColor="Black"/>
+                <ImageButton Source="IconBucar.png"
+                             Clicked="OnButtonClicked"/>
+            </StackLayout>
+        </Frame>
+        <Label Text="Hola, Jorge, hoy es domingo!"
+               FontSize="18"
+               HorizontalTextAlignment="Center"
+               Margin="0,30,0,-20"
+               TextColor="White"/>
+        <Label Text="{Binding Title}"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               Margin="0,10,0,0"
+               TextColor="White"/>
+        <Label Text="Rep. Dominicana"
+               FontSize="18"
+               HorizontalTextAlignment="Center"
+               Margin="0,-5,0,-20"
+               TextColor="White"/>
+        
+        <Frame Margin="80,30,80,0"
+               HeightRequest="180"
+               WidthRequest="200"
+               CornerRadius="500">
+            <StackLayout>
+                <Image Source="ImagenClima.png"
+                       HeightRequest="75"
+                       HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding Main.Temperature}"
+                       FontSize="47"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="10,-5,0,0"/>
+                    <Label Text="°F"
+                       FontSize="47"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="-5,-5,0,0"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <StackLayout Orientation="Horizontal" Spacing="70" HorizontalOptions="Center" Margin="0,20,0,0">
+        <StackLayout Orientation="Vertical">
+            <Label Text="Estado de Vientos"
+                   TextColor="White"
+                   FontSize="16"
+                   FontAttributes="Bold"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="{Binding Wind.Speed}" 
+                       FontSize="20"
+                   TextColor="White"/>
+                    <Label Text="mph"
+                       FontSize="20"
+                   TextColor="White"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Humedad"
+                       FontSize="16"
+                   TextColor="White"
+                   FontAttributes="Bold"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="{Binding Main.Humidity}"
+                   TextColor="White"
+                   FontSize="20" />
+                    <Label Text="%"
+                  TextColor="White"
+                  FontSize="20" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Spacing="70" HorizontalOptions="Center" Margin="0,20,0,0">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Visibilidad"
+                       FontSize="16"
+                   TextColor="White"
+                   FontAttributes="Bold"/>
+                <Label Text="{Binding Weather[0].Visibility}"
+                       FontSize="20"
+                       HorizontalOptions="Center"
+                   TextColor="White"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Proximos 5 dias"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="35,5,0,0"/>
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                <Frame HeightRequest="55"
+                       WidthRequest="45"
+                       Margin="20,10,0,0"
+                       CornerRadius="10"
+                       BackgroundColor="#bde0fe">
+                    <StackLayout>
+                        <Label Text="Lun"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Margin="0,-10,0,0"/>
+                        <Image Source="Clima1"
+                               HeightRequest="35"
+                               Margin="0,-10,0,0"/>
+                        <Label Text="60°F"
+                               TextColor="Black"
+                               Margin="0,-10,0,0"
+                               FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HeightRequest="55"
+                       WidthRequest="45"
+                       Margin="5,10,0,0"
+                       CornerRadius="10"
+                       BackgroundColor="#bde0fe">
+                    <StackLayout>
+                        <Label Text="Mar"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Margin="0,-10,0,0"/>
+                        <Image Source="Clima2"
+                               HeightRequest="35"
+                               Margin="0,-10,0,0"/>
+                        <Label Text="66°F"
+                               TextColor="Black"
+                               Margin="0,-10,0,0"
+                               FontSize="20"/>
+                    </StackLayout>
+                </Frame>
+                    <Frame HeightRequest="55"
+                       WidthRequest="45"
+                       Margin="5,10,0,0"
+                       CornerRadius="10"
+                       BackgroundColor="#bde0fe">
+                        <StackLayout>
+                            <Label Text="Mie"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Margin="0,-10,0,0"/>
+                            <Image Source="Clima3"
+                               HeightRequest="35"
+                               Margin="0,-5,0,0"/>
+                            <Label Text="70°F"
+                               TextColor="Black"
+                               Margin="0,-10,0,0"
+                               FontSize="20"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="55"
+                       WidthRequest="45"
+                       Margin="5,10,0,0"
+                       CornerRadius="10"
+                       BackgroundColor="#bde0fe">
+                        <StackLayout>
+                            <Label Text="Jue"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Margin="0,-10,0,0"/>
+                            <Image Source="Clima4"
+                               HeightRequest="35"
+                               Margin="0,-5,0,0"/>
+                            <Label Text="75°F"
+                               TextColor="Black"
+                               Margin="0,-10,0,0"
+                               FontSize="20"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="55"
+                       WidthRequest="45"
+                       Margin="5,10,0,0"
+                       CornerRadius="10"
+                       BackgroundColor="#bde0fe">
+                        <StackLayout>
+                            <Label Text="Vie"
+                               TextColor="Black"
+                               FontAttributes="Bold"
+                               Margin="0,-10,0,0"/>
+                            <Image Source="Clima5"
+                               HeightRequest="35"
+                               Margin="0,-10,0,0"/>
+                            <Label Text="60°F"
+                               TextColor="Black"
+                               Margin="0,-10,0,0"
+                               FontSize="20"/>
+                        </StackLayout>
+                    </Frame>
+
+
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

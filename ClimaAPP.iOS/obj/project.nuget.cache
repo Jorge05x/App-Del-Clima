@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "G5PYBxw/k9fkUqwWpLy/reyH5F4nPEfyMkCNEJu0ZMFbOJT2IYjc1vZdPi1iTqNj9UksSQ4tdWphzURMLxbOxg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\campu\\source\\repos\\ClimaAPP\\ClimaAPP.iOS\\ClimaAPP.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\campu\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\campu\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\campu\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\campu\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

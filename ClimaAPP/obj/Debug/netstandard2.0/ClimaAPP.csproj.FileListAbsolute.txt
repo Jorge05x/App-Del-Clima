@@ -1,0 +1,15 @@
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\bin\Debug\netstandard2.0\ClimaAPP.deps.json
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\bin\Debug\netstandard2.0\ClimaAPP.dll
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\bin\Debug\netstandard2.0\ref\ClimaAPP.dll
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\bin\Debug\netstandard2.0\ClimaAPP.pdb
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\ClimaAPP.csproj.AssemblyReference.cache
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\ClimaAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\ClimaAPP.AssemblyInfoInputs.cache
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\ClimaAPP.AssemblyInfo.cs
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\ClimaAPP.csproj.CoreCompileInputs.cache
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\ClimaAPP.dll
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\refint\ClimaAPP.dll
+C:\Users\campu\source\repos\ClimaAPP\ClimaAPP\obj\Debug\netstandard2.0\ClimaAPP.pdb
